@@ -1,0 +1,409 @@
+/* Estilos generales */
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, p{
+    font-family: "Lexend", sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Estilos para el carrusel */
+.carousel{
+    margin-top: 20px;
+}
+
+.carousel-item img {
+    height: 500px; 
+    object-fit: cover; 
+}
+
+/* Encabezado */
+.header{
+    grid-area: header;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    align-items: center;
+}
+
+.header img{
+    width: 100px;
+    margin: 0px 15px;
+}
+
+.header .Titulo{
+    font-size: 30px;
+}
+
+/* Estilos del menú principal */
+.nav{
+    grid-area: nav;
+    display: flex;
+    background-color: rgb(129, 185, 198);
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    z-index: 1000;
+    font-size: 15px;
+    margin: 0;
+}
+
+.flex-menu{
+    list-style-type: none;
+    overflow: hidden;
+    list-style: none;
+    margin: 0 ;
+    padding: 0;
+}
+
+.flex-menu .nav-item{
+    font-size: 42px;
+    float: left;
+    align-items: center;
+    margin-right: 15px;
+    text-align: center;
+
+}
+
+.nav-item .nav-link{
+    display: block;
+    line-height: 18px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.nav-item a{
+    font-family:"Lexend", sans-serif;
+    color: azure;
+    padding: 14px;
+    text-decoration: none;
+    line-height: 18px;
+    font-size: 18px;
+    align-items: center;
+}
+
+.nav .flex-menu .nav-item a:hover{
+    background-color: white;
+    color: black;
+    animation: 0.5s infinite boton-menu;
+}
+
+@keyframes boton-menu {
+    0%{ transform: scaleX(1.0);}
+    50%{ transform: scaleX(1.15);}
+    100%{ transform: scaleX(1.0);}
+}
+
+.pulse a {
+    padding: 8px 16px;
+    width: auto;
+    border: none;
+    display: flex;
+    outline: 0;
+    text-decoration: none;
+}
+
+.pulse .boton-carrito{
+    display:inline-block;
+    font-size: inherit;
+    text-rendering: auto;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 50px;
+}
+
+/* Estilos para el contenido principal */
+.main{
+    grid-area: main;
+    text-align: center;
+}
+
+.main p{
+    padding: 10px;
+}
+
+/* Introducción de la empresa */
+.intro{
+    margin: 50px;
+}
+
+/* Contenedor de los productos */
+.contenedor-productos{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    grid-area: contenedor-productos;
+    padding: 15px;
+}
+
+.contenedor-productos .celulares{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contenedor-productos .subtitulo{
+    margin-left: 5%;
+    text-align: center;
+}
+
+.contenedor-productos .card{
+    margin: 3%;
+    width: 250px;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    background-color: rgb(182, 220, 220);
+    color: black;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 3);
+}
+
+.contenedor-productos .card img{
+    height: auto;
+}
+
+.contenedor-productos .card .card-title{
+    display: flex;
+    align-items: center;
+    height: auto;
+    padding: 15px 15px 20px;
+    justify-content: space-between;
+}
+
+.contenedor-productos .card .card-descripcion{
+    color: rgb(221, 228, 216);
+    bottom: -150%;
+    padding: 3%;
+    max-height: 150%;
+    overflow-y: auto;
+    line-height: 15px;
+    position: absolute;
+    background-color: #7992cc;
+    box-sizing: border-box;
+    transition: bottom 0.4s ease-in-out;
+    text-align: center;
+}
+
+.contenedor-productos .card:hover .card-descripcion{
+    bottom: 0;
+}
+
+.card p{
+    font-size: 16px;
+    color: rgb(7, 7, 11);
+}
+
+.card button{
+    background-color: rgb(220, 220, 233);
+    color: rgb(29, 16, 16);
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.card button:hover{
+    background-color: rgb(142, 148, 193);
+}
+
+/* pie de página */
+
+.footer{
+    grid-area: footer;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    color: rgb(11, 11, 11);
+    text-align: center;
+    min-height: 200px;
+}
+
+.footer .ubicacion{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100px;
+    font-size: 24px;
+    justify-content: center;
+}
+
+
+.ubicacion iframe{
+    justify-content: center;
+}
+
+/* Estilos para el formulario */
+.formulario{
+    width: 500px;
+    margin: 70px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #efe8e88b;
+}
+
+.formulario form{
+    display:flex;
+    flex-wrap: wrap;
+    padding: 30px 20px;
+    margin: 30px;
+}
+
+.formulario h3{
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+.formulario input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+.formulario input:focus{
+    border: 3px solid #555;
+}
+
+.formulario input, textarea{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+.formulario button{
+    padding: 12px 25px ;
+    margin: 10px 30px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 150px;
+}
+
+.formulario button:hover {
+    background-color: #0056b3;
+}
+
+/* Pie de página */
+
+.footer .redes{
+    background-color: #ddd;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    text-align: center;
+    flex: 400%;
+    margin: 0;
+}
+
+.footer .Rsocial{
+    font-size: 24px;
+    display: inline-block;
+    width: 40px;
+    margin: 5px;
+}
+
+
+/* Grid para layout general */
+.container{
+    display: grid;
+    grid-template-rows: auto 1fr auto; 
+    padding: 0;
+    grid-template-areas:
+    "header header"
+    "nav nav"
+    "main main"
+    "footer footer";
+    margin: 0;
+}
+
+
+
+
+/* ----------------------------- */
+/*        Media Queries          */
+/* ----------------------------- */
+
+/* Estilos para pantallas medianas */
+@media only screen and  (max-width: 768px) {
+
+
+    .celulares{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .celulares .card img{
+        max-width: 100%;
+        height: auto;
+    }
+
+    .carousel-item img {
+        height: 300px;
+    }
+
+    .footer{
+        width: 100%;
+    }
+}
+
+/* Estilos para pantallas pequeñas */
+
+@media only screen and (max-width: 600px) {
+
+
+
+    .flex-menu .nav-item{
+        float: none;
+    }
+
+    .celulares{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card{
+        width: 90%;
+    }
+
+    .celulares .card img{
+        height: auto;
+    }
+
+    .carousel-item img {
+        height: 200px;
+    }
+
+    .Titulo{
+        font-size: 20px;
+    }
+
+    footer form h1, footer h1 {
+        font-size: 20px;
+    }
+
+    footer a {
+        font-size: 16px;
+    }
+}
+
+
