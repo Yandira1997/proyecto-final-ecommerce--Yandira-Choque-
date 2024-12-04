@@ -27,7 +27,7 @@
 
 <body>
     <!-- Comienzo del encabezado de la página -->
-    <div class="container">
+    <div class="grid-container">
         <div class="header">
             <div class="header-inicio">
                 <!-- Logo de la empresa -->
@@ -55,7 +55,6 @@
                     <a href="#consulta" class="nav-link">Contacto</a>
                 </li>
             </ul>
-
             <!-- Icono del carrito de compras -->
             <div class="pulse">
                 <a class="boton-carrito" href="#"><span class="material-symbols-outlined">
@@ -63,258 +62,257 @@
             </div>
         </div>
 
-        <div class="main">
-            <!-- Carrusel de imágenes (slideshow) -->
-            <div id="carouselExampleIndicators" class="carousel slide">
-                <!-- Indicadores (puntos) para cambiar entre las imágenes del carrusel -->
-                <div class="carousel-indicators">
-                    <!-- Botón para la primera imagen -->
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                        class="active"></button>
-                    <!-- Botón para la segunda imagen -->
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
-                    <!-- Botón para la tercera imagen -->
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
-                </div>
-                <!-- Contenedor de las imágenes del carrusel -->
-                <div class="carousel-inner">
-                    <!-- Primera imagen del carrusel -->
-                    <div class="carousel-item active">
-                        <img src="./image/denis-cherkashin-zgUkIMKeJq4-unsplash.jpg" class="d-block w-100"
-                            alt="Imagen 1">
+        <!-- Contenido principal de la página -->
+            <div class="main">
+                <!-- Carrusel de imágenes (slideshow) -->
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <!-- Indicadores (puntos) para cambiar entre las imágenes del carrusel -->
+                    <div class="carousel-indicators">
+                        <!-- Botón para la primera imagen -->
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active"></button>
+                        <!-- Botón para la segunda imagen -->
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+                        <!-- Botón para la tercera imagen -->
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
                     </div>
-                    <!-- Segunda imagen del carrusel -->
-                    <div class="carousel-item">
-                        <img src="./image/evgeny-opanasenko-8XYK6Ixspwo-unsplash.jpg" class="d-block w-100"
-                            alt="Imagen 2">
-                    </div>
-                    <!-- Tercera imagen del carrusel -->
-                    <div class="carousel-item">
-                        <img src="./image/gustavo-cordeiro-PDTfB34xYLE-unsplash.jpg" class="d-block w-100"
-                            alt="Imagen 3"> 
-                    </div>
+                    <!-- Contenedor de las imágenes del carrusel -->
+                    <div class="carousel-inner">
+                        <!-- Primera imagen del carrusel -->
+                        <div class="carousel-item active">
+                            <img src="./image/denis-cherkashin-zgUkIMKeJq4-unsplash.jpg" class="d-block w-100"
+                                alt="Imagen 1">
+                        </div>
+                        <!-- Segunda imagen del carrusel -->
+                        <div class="carousel-item">
+                            <img src="./image/evgeny-opanasenko-8XYK6Ixspwo-unsplash.jpg" class="d-block w-100"
+                                alt="Imagen 2">
+                        </div>
+                        <!-- Tercera imagen del carrusel -->
+                        <div class="carousel-item">
+                            <img src="./image/gustavo-cordeiro-PDTfB34xYLE-unsplash.jpg" class="d-block w-100"
+                                alt="Imagen 3"> 
+                        </div>
+                    </div>    
+                    <!-- Botón para ir a la imagen anterior -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <!-- Icono de flecha hacia la izquierda -->
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <!-- Texto alternativo para lectores de pantalla -->
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <!-- Botón para ir a la imagen siguiente -->
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <!-- Icono de flecha hacia la derecha -->
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <!-- Texto alternativo para lectores de pantalla -->
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
                 </div>    
-                <!-- Botón para ir a la imagen anterior -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="prev">
-                    <!-- Icono de flecha hacia la izquierda -->
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <!-- Texto alternativo para lectores de pantalla -->
-                    <span class="visually-hidden">Anterior</span>
-                </button>
-                <!-- Botón para ir a la imagen siguiente -->
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="next">
-                    <!-- Icono de flecha hacia la derecha -->
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <!-- Texto alternativo para lectores de pantalla -->
-                    <span class="visually-hidden">Siguiente</span>
-                </button>
-            </div>    
 
-            <!-- Introducción de la empresa -->
-            <div id="nosotros" class="intro">
-                <h2>Quienes somos</h2>
-                <p>Somos una compañia con 20 años de trayectoria que se dedica al comercio electrónico de celulares
-                    de gama media y gama alta en
-                    Argentina.
-                    Tenemos como proposito brindar un servicio que ofrece una variedad de celulares que salen al
-                    mercado, permitiendo que nuestros usuarios compren y paguen a través de internet de forma fácil
-                    y segura.
-                </p>
-            </div>
-            
+                <!-- Introducción de la empresa -->
+                <div id="nosotros" class="intro">
+                    <h2>Quienes somos</h2>
+                    <p>Somos una compañia con 20 años de trayectoria que se dedica al comercio electrónico de celulares
+                        de gama media y gama alta en
+                        Argentina.
+                        Tenemos como proposito brindar un servicio que ofrece una variedad de celulares que salen al
+                        mercado, permitiendo que nuestros usuarios compren y paguen a través de internet de forma fácil
+                        y segura.
+                    </p>
+                </div>
+                
 
-            <!-- Productos -->
-            <div class="contenedor-productos">
-                <!-- Subtitulo -->
-                <h2 id="celu" class="subtitulo">Productos destacados</h2>
-                <!-- Contenedor de los celulares -->
-                <div class="celulares">
-                    <!-- Tarjeta del celular -->
-                    <div class="card">
-                        <!-- Imagen del celular -->
-                        <img src="./image/iphone 13 128gb.jpg" height="300" width="300" alt="iphone">
-                        <h3 class="card-title">
-                            Apple Iphone 13
-                        </h3>
-                        <div class="card-descripcion">
-                            <!-- Descripción breve y precio -->
-                            <h3>Descripción:</h3>
-                            <p> Tamaño de la pantalla: 6.1"
-                                Memoria interna: 128 GB
-                                Cámara trasera: 12 Mpx
-                                Cámara principal: 12px
-                            </p>
-                            <h3>Precio</h3>
-                            <p>$1.489.000</p>
-                            <button>Agregar al Carrito</button>
+                <!-- Productos -->
+                <div class="contenedor-productos">
+                    <!-- Subtitulo -->
+                    <h2 id="celu" class="subtitulo">Productos destacados</h2>
+                    <!-- Contenedor de los celulares -->
+                    <div class="celulares">
+                        <!-- Tarjeta del celular -->
+                        <div class="card">
+                            <!-- Imagen del celular -->
+                            <img src="./image/iphone 13 128gb.jpg" height="300" width="300" alt="iphone">
+                            <h3 class="card-title">
+                                Apple Iphone 13
+                            </h3>
+                            <div class="card-descripcion">
+                                <!-- Descripción breve y precio -->
+                                <h3>Descripción:</h3>
+                                <p> Tamaño de la pantalla: 6.1"
+                                    Memoria interna: 128 GB
+                                    Cámara trasera: 12 Mpx
+                                    Cámara principal: 12px
+                                </p>
+                                <h3>Precio</h3>
+                                <p>$1.489.000</p>
+                                <button>Agregar al Carrito</button>
+                            </div>
                         </div>
-                    </div>
 
-                    <!-- Tarjeta del celular -->
-                    <div class="card">
-                        <!-- Imagen del celular -->
-                        <img src="./image/iphone-15-pro-max-256gb-natural.jpg" height="300" width="300" alt="iphone 15">
-                        <h3 class="card-title">
-                            Apple Iphone 15 Pro Max
-                        </h3>
-                        <div class="card-descripcion">
-                            <!-- Descripción breve y precio -->
-                            <h3>Descripción:</h3>
-                            <p> Tamaño de la pantalla: 6.7"
-                                Memoria interna: 256 GB
-                                Cámara trasera: 48 Mpx
-                                Cámara principal: 12px
-                            </p>
-                            <h3>Precio</h3>
-                            <p>$2.459.000</p>
-                            <button>Agregar al Carrito</button>
+                        <!-- Tarjeta del celular -->
+                        <div class="card">
+                            <!-- Imagen del celular -->
+                            <img src="./image/iphone-15-pro-max-256gb-natural.jpg" height="300" width="300" alt="iphone 15">
+                            <h3 class="card-title">
+                                Apple Iphone 15 Pro Max
+                            </h3>
+                            <div class="card-descripcion">
+                                <!-- Descripción breve y precio -->
+                                <h3>Descripción:</h3>
+                                <p> Tamaño de la pantalla: 6.7"
+                                    Memoria interna: 256 GB
+                                    Cámara trasera: 48 Mpx
+                                    Cámara principal: 12px
+                                </p>
+                                <h3>Precio</h3>
+                                <p>$2.459.000</p>
+                                <button>Agregar al Carrito</button>
+                            </div>
                         </div>
-                    </div>
 
-                    <!-- Tarjeta del celular -->
-                    <div class="card">
-                        <!-- Imagen del celular -->
-                        <img src="./image/moto_e14_verde.jpg" height="300" width="300" alt="Motorola e14">
-                        <h3 class="card-title">
-                            Motorola Moto E14
-                        </h3>
-                        <div class="card-descripcion">
-                            <!-- Descripción breve y precio -->
-                            <h3>Descripción:</h3>
-                            <p> Tamaño de la pantalla: 6.5"
-                                Memoria interna: 64 GB
-                                Cámara trasera: 13 Mpx
-                                Cámara principal: 5px
-                            </p>
-                            <h3>Precio</h3>
-                            <p>$169.000</p>
-                            <button>Agregar al Carrito</button>
+                        <!-- Tarjeta del celular -->
+                        <div class="card">
+                            <!-- Imagen del celular -->
+                            <img src="./image/moto_e14_verde.jpg" height="300" width="300" alt="Motorola e14">
+                            <h3 class="card-title">
+                                Motorola Moto E14
+                            </h3>
+                            <div class="card-descripcion">
+                                <!-- Descripción breve y precio -->
+                                <h3>Descripción:</h3>
+                                <p> Tamaño de la pantalla: 6.5"
+                                    Memoria interna: 64 GB
+                                    Cámara trasera: 13 Mpx
+                                    Cámara principal: 5px
+                                </p>
+                                <h3>Precio</h3>
+                                <p>$169.000</p>
+                                <button>Agregar al Carrito</button>
+                            </div>
                         </div>
-                    </div>
 
-                    <!-- Tarjeta del celular -->
-                    <div class="card">
-                        <!-- Imagen del celular -->
-                        <img src="./image/CELU-MOTOROLA-G54-VERDE.jpg" height="300" width="300" alt="motorola G54">
-                        <h3 class="card-title">
-                            Motorola Moto G54 5G
-                        </h3>
-                        <div class="card-descripcion">
-                            <!-- Descripción breve y precio -->
-                            <h3>Descripción:</h3>
-                            <p> Tamaño de la pantalla: 6.5"
-                                Memoria interna: 128 GB
-                                Cámara trasera: 50 Mpx
-                                Cámara principal: 16px
-                            </p>
-                            <h3>Precio</h3>
-                            <p>$363.000</p>
-                            <button>Agregar al Carrito</button>
+                        <!-- Tarjeta del celular -->
+                        <div class="card">
+                            <!-- Imagen del celular -->
+                            <img src="./image/CELU-MOTOROLA-G54-VERDE.jpg" height="300" width="300" alt="motorola G54">
+                            <h3 class="card-title">
+                                Motorola Moto G54 5G
+                            </h3>
+                            <div class="card-descripcion">
+                                <!-- Descripción breve y precio -->
+                                <h3>Descripción:</h3>
+                                <p> Tamaño de la pantalla: 6.5"
+                                    Memoria interna: 128 GB
+                                    Cámara trasera: 50 Mpx
+                                    Cámara principal: 16px
+                                </p>
+                                <h3>Precio</h3>
+                                <p>$363.000</p>
+                                <button>Agregar al Carrito</button>
+                            </div>
                         </div>
-                    </div>
 
-                    <!-- Tarjeta del celular -->
-                    <div class="card">
-                        <!-- Imagen del celular -->
-                        <img src="./image/samsung A15.jpg" height="300" width="300" alt="samsung A15">
-                        <h3 class="card-title">
-                            Samsung Galaxy A15
-                        </h3>
-                        <div class="card-descripcion">
-                            <!-- Descripción breve y precio -->
-                            <h3>Descripción:</h3>
-                            <p> Tamaño de la pantalla: 6.5"
-                                Memoria interna: 128 GB
-                                Cámara trasera: 50 Mpx
-                                Cámara principal: 13px
-                            </p>
-                            <h3>Precio</h3>
-                            <p>$299.000</p>
-                            <button>Agregar al Carrito</button>
+                        <!-- Tarjeta del celular -->
+                        <div class="card">
+                            <!-- Imagen del celular -->
+                            <img src="./image/samsung A15.jpg" height="300" width="300" alt="samsung A15">
+                            <h3 class="card-title">
+                                Samsung Galaxy A15
+                            </h3>
+                            <div class="card-descripcion">
+                                <!-- Descripción breve y precio -->
+                                <h3>Descripción:</h3>
+                                <p> Tamaño de la pantalla: 6.5"
+                                    Memoria interna: 128 GB
+                                    Cámara trasera: 50 Mpx
+                                    Cámara principal: 13px
+                                </p>
+                                <h3>Precio</h3>
+                                <p>$299.000</p>
+                                <button>Agregar al Carrito</button>
+                            </div>
                         </div>
-                    </div>
 
-                    <!-- Tarjeta del celular -->
-                    <div class="card">
-                        <!-- Imagen del celular -->
-                        <img src="./image/samsung A35 5G.jpeg" height="300" width="300" alt="samsung A35">
-                        <h3 class="card-title">
-                            Samsung Galaxy A35
-                        </h3>
-                        <div class="card-descripcion">
-                            <!-- Descripción breve y precio -->
-                            <h3>Descripción:</h3>
-                            <p> Tamaño de la pantalla: 6.6"
-                                Memoria interna: 256 GB
-                                Cámara trasera: 50 Mpx
-                                Cámara principal: 13px
-                            </p>
-                            <h3>Precio</h3>
-                            <p>$599.000</p>
-                            <button>Agregar al Carrito</button>
+                        <!-- Tarjeta del celular -->
+                        <div class="card">
+                            <!-- Imagen del celular -->
+                            <img src="./image/samsung A35 5G.jpeg" height="300" width="300" alt="samsung A35">
+                            <h3 class="card-title">
+                                Samsung Galaxy A35
+                            </h3>
+                            <div class="card-descripcion">
+                                <!-- Descripción breve y precio -->
+                                <h3>Descripción:</h3>
+                                <p> Tamaño de la pantalla: 6.6"
+                                    Memoria interna: 256 GB
+                                    Cámara trasera: 50 Mpx
+                                    Cámara principal: 13px
+                                </p>
+                                <h3>Precio</h3>
+                                <p>$599.000</p>
+                                <button>Agregar al Carrito</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-        </div>
+            <div class="footer">
+                <div class="Ubicación">
+                    <h3>Donde estamos:</h3>
+                    <p>Av. Brig. Gral. Juan Manuel de Rosas 3910</p>
+                    <p>San Justo, Provincia de Buenos Aires</p>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13123.229791341511!2d-58.5573727!3d-34.6848089!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7721acd11c1%3A0x2639a476211f517c!2sSan%20Justo%20Shopping!5e0!3m2!1ses-419!2sar!4v1731631954982!5m2!1ses-419!2sar"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
 
-        <div class="footer">
-            <div class="Ubicación">
-                <h3>Donde estamos:</h3>
-                <p>Av. Brig. Gral. Juan Manuel de Rosas 3910</p>
-                <p>San Justo, Provincia de Buenos Aires</p>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13123.229791341511!2d-58.5573727!3d-34.6848089!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7721acd11c1%3A0x2639a476211f517c!2sSan%20Justo%20Shopping!5e0!3m2!1ses-419!2sar!4v1731631954982!5m2!1ses-419!2sar"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <!-- Formulario -->
+                <div class="formulario">
+                    <h3 id="consulta">Envie su consulta:</h3>
+                    <form action="https://formspree.io/f/mgveybya" method="post">
+                        <label for="input1">Nombre</label>
+                        <input type="text" name="Nombre" id="input1" placeholder="Ingrese su nombre" required>
+
+                        <label for="input2">Apellido</label>
+                        <input type="text" name="ape" id="input" placeholder="Ingrese su apellido" required>
+
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" name="email" id="email" required>
+
+                        <label for="mensaje">Mensaje</label>
+                        <textarea name="mensaje" id="mensaje" rows="4" cols="50"></textarea>
+
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+
+                <div class="redes">
+                    <p>&copy; 2024 Mobile Store S.A.</p>
+
+                    <!-- Redes sociales -->
+                    <h4>Seguinos en nuestras redes</h4>
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                        <img class="Rsocial" src="./image/facebook.png" alt="logo facebook" width="36">
+                    </a>
+                    <a href="https://x.com/" target="_blank" rel="noopener noreferrer">
+                        <img class="Rsocial" src="./image/twitter-x.png" alt="logo x" width="36">
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                        <img class="Rsocial" src="./image/logotipo-de-instagram.png" alt="logo instagram" width="36">
+                    </a>
+                </div>
             </div>
 
-            <!-- Formulario -->
-            <div class="formulario">
-                <h3 id="consulta">Envie su consulta:</h3>
-                <form action="https://formspree.io/f/mgveybya" method="post">
-                    <label for="input1">Nombre</label>
-                    <input type="text" name="Nombre" id="input1" placeholder="Ingrese su nombre" required>
-
-                    <label for="input2">Apellido</label>
-                    <input type="text" name="ape" id="input" placeholder="Ingrese su apellido" required>
-
-                    <label for="email">Correo electrónico:</label>
-                    <input type="email" name="email" id="email" required>
-
-                    <label for="mensaje">Mensaje</label>
-                    <textarea name="mensaje" id="mensaje" rows="4" cols="50"></textarea>
-
-                    <button type="submit">Enviar</button>
-                </form>
-            </div>
-
-            <div class="redes">
-                <p>&copy; 2024 Mobile Store S.A.</p>
-
-                <!-- Redes sociales -->
-                <h4>Seguinos en nuestras redes</h4>
-                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
-                    <img class="Rsocial" src="./image/facebook.png" alt="logo facebook" width="36">
-                </a>
-                <a href="https://x.com/" target="_blank" rel="noopener noreferrer">
-                    <img class="Rsocial" src="./image/twitter-x.png" alt="logo x" width="36">
-                </a>
-                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-                    <img class="Rsocial" src="./image/logotipo-de-instagram.png" alt="logo instagram" width="36">
-                </a>
-            </div>
-        </div>
-
-        <!-- Scripts de JavaScript necesarios para Bootstrap y los iconos -->
-        <!-- Script de Bootstrap para funcionalidades interactivas -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Script para los iconos de Boxicons -->
-        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-    
+            <!-- Scripts de JavaScript necesarios para Bootstrap y los iconos -->
+            <!-- Script de Bootstrap para funcionalidades interactivas -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+            <!-- Script para los iconos de Boxicons -->
+            <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
         
     </div>
 </body>

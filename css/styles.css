@@ -1,4 +1,7 @@
-/* Estilos generales */
+/* Estilos generales */´
+*{
+    box-sizing: border-box;
+}
 
 body{
     padding: 0;
@@ -25,7 +28,6 @@ a{
 
 /* Encabezado */
 .header{
-    grid-area: header;
     background-color: black;
     color: white;
     display: flex;
@@ -33,6 +35,8 @@ a{
     text-align: center;
     padding: 20px;
     align-items: center;
+    grid-area: header;
+
 }
 
 .header img{
@@ -46,7 +50,6 @@ a{
 
 /* Estilos del menú principal */
 .nav{
-    grid-area: nav;
     display: flex;
     background-color: rgb(129, 185, 198);
     justify-content: center;
@@ -54,10 +57,11 @@ a{
     top: 0;
     z-index: 1000;
     font-size: 15px;
-    margin: 0;
+    grid-area: nav;
+
 }
 
-.flex-menu{
+.nav .flex-menu{
     list-style-type: none;
     overflow: hidden;
     list-style: none;
@@ -124,6 +128,8 @@ a{
 }
 
 /* Estilos para el contenido principal */
+
+
 .main{
     grid-area: main;
     text-align: center;
@@ -220,8 +226,6 @@ a{
 .footer{
     grid-area: footer;
     justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
     padding: 50px;
     color: rgb(11, 11, 11);
     text-align: center;
@@ -243,7 +247,6 @@ a{
 
 /* Estilos para el formulario */
 .formulario{
-    width: 500px;
     margin: 70px;
     border: 1px solid black;
     border-radius: 5px;
@@ -324,16 +327,14 @@ a{
 
 
 /* Grid para layout general */
-.container{
+.grid-container{
     display: grid;
     grid-template-rows: auto 1fr auto; 
-    padding: 0;
     grid-template-areas:
     "header header"
     "nav nav"
     "main main"
     "footer footer";
-    margin: 0;
 }
 
 
@@ -345,7 +346,9 @@ a{
 
 /* Estilos para pantallas medianas */
 @media only screen and  (max-width: 768px) {
-
+    .grid-container{
+        width: 100%;
+    }
 
     .celulares{
         flex-direction: column;
@@ -361,15 +364,16 @@ a{
         height: 300px;
     }
 
-    .footer{
-        width: 100%;
-    }
+    
 }
 
 /* Estilos para pantallas pequeñas */
 
 @media only screen and (max-width: 600px) {
-
+    .grid-container{
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
 
 
     .flex-menu .nav-item{
@@ -397,13 +401,18 @@ a{
         font-size: 20px;
     }
 
-    footer form h1, footer h1 {
+    .footer form h1, footer h1 {
         font-size: 20px;
     }
 
-    footer a {
+    .footer a {
         font-size: 16px;
     }
+
+    .footer .formulario{
+        width: 100%;
+    }
+
 }
 
 
