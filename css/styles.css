@@ -108,14 +108,16 @@ a{
     100%{ transform: scaleX(1.0);}
 }
 
+
 .carrito-compras a {
     border: none;
     outline: 0;
     text-decoration: none;
     margin: 5px ;
     font-size: 30px;
-
 }
+
+
 
 .carrito-compras .boton-carrito {
     display: flex;
@@ -130,7 +132,8 @@ a{
 
 /* Carrito de compras */
 #contador-carrito{
-    background-color: red;
+    background-color: rgb(190, 51, 51);
+    color:aliceblue;
     border-radius: 80%;
     width: 14px;
     aspect-ratio: 1;
@@ -141,8 +144,6 @@ a{
 }
 
 /* Estilos para el contenido principal */
-
-
 .main{
     grid-area: main;
     text-align: center;
@@ -238,7 +239,6 @@ a{
 
 .footer{
     grid-area: footer;
-    justify-content: center;
     padding: 50px;
     color: rgb(11, 11, 11);
     text-align: center;
@@ -271,7 +271,6 @@ a{
     display:flex;
     flex-wrap: wrap;
     padding: 30px 20px;
-    margin: 30px;
 }
 
 .formulario h3{
@@ -312,8 +311,7 @@ a{
     color: white;
     border: none;
     border-radius: 4px;
-    cursor: pointer;
-    margin-left: 150px;
+    width: 100px;
 }
 
 .formulario button:hover {
@@ -322,12 +320,11 @@ a{
 
 /* Pie de página */
 
-.footer .redes{
+.redes{
     background-color: #ddd;
     padding-top: 32px;
     padding-bottom: 32px;
     text-align: center;
-    flex: 400%;
     margin: 0;
 }
 
@@ -388,7 +385,6 @@ a{
         grid-template-columns: 1fr;
     }
 
-
     .flex-menu .nav-item{
         float: none;
     }
@@ -414,18 +410,22 @@ a{
         font-size: 20px;
     }
 
+
     .footer form h1, footer h1 {
         font-size: 20px;
+    }
+
+    .form{
+        height: 300px;
     }
 
     .footer a {
         font-size: 16px;
     }
 
-    .footer .formulario{
-        width: 100%;
+    iframe{
+        width: 350px;
     }
-
 }
 
 
